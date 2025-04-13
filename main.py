@@ -10,6 +10,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+from database import Base, engine
+import models
+
+Base.metadata.create_all(bind=engine)
 
 app.include_router(auth.router)
 
