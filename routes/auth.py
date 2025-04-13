@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 router = APIRouter(prefix="/auth", tags=["auth"])
 
-SECRET_KEY = "your-secret-key"  # 🔐 Replace with a secure secret!
+SECRET_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0dXNlckBleGFtcGxlLmNvbSIsInJvbGUiOiJjdXN0b21lciIsImV4cCI6MTc0NDU3MTM0MX0.fuTxt01izKVg2GJApKFAOwFsYiZS_5knyV_y9xN5z8Y"  # 🔐 Replace with a secure secret!
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 1 day
 
